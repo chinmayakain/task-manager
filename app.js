@@ -18,7 +18,7 @@ app.use("/api/tasks", Router);
 const start = async () => {
   try {
     await connectDb(process.env.MONGO_URI);
-    app.listen(PORT, console.log(`Server is listening on port ${PORT}`));
+    app.listen(process.env.PORT || 3000, console.log(`Server is listening on port ${PORT}`));
   } catch (error) {
     console.log(error);
   }
