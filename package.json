@@ -1,6 +1,6 @@
 {
-  "name": "task-manager",
   "author": "chinmaya naik",
+  "name": "task-manager",
   "version": "0.1.0",
   "private": true,
   "main": "app.js",
@@ -19,6 +19,9 @@
   },
   "scripts": {
     "start": "nodemon app.js"
+  },
+  "engines": {
+    "node": "~16.13.2"
   },
   "eslintConfig": {
     "extends": [
